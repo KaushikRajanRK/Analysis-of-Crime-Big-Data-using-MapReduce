@@ -1,0 +1,1120 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0627.2230                               -->
+<workbook original-version='18.1' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='modern' />
+  <datasources>
+    <datasource caption='Sheet1 (5)' inline='true' name='federated.1gfmcwi0rsu1l41fpz5jj1hik0z1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='5' name='excel-direct.1ljv7mh0y28qvp1dxpgl30fxmhgm'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Education/IRELAND/NCI/Moodle Documents/SEM 2/PFDA/Project/Final/Project final/Visualization/5.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ljv7mh0y28qvp1dxpgl30fxmhgm' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D26:no:A1:D26:0' header='yes' outcome='6'>
+            <column datatype='string' name='Shift' ordinal='0' />
+            <column datatype='string' name='OFFENSE' ordinal='1' />
+            <column datatype='string' name='Crimetype' ordinal='2' />
+            <column datatype='integer' name='Crime Count' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Shift</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Shift]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Shift</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OFFENSE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OFFENSE]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>OFFENSE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crimetype</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Crimetype]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Crimetype</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crime Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Crime Count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Crime Count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D26:no:A1:D26:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Offense' datatype='string' name='[OFFENSE]' role='dimension' type='nominal' />
+      <column-instance column='[OFFENSE]' derivation='None' name='[none:OFFENSE:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.518919' measure-ordering='alphabetic' measure-percentage='0.481081' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:OFFENSE:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;THEFT/OTHER&quot;</bucket>
+            </map>
+            <map to='#396794'>
+              <bucket>&quot;THEFT F/AUTO&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;SEX ABUSE&quot;</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>&quot;ROBBERY&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;MOTOR VEHICLE THEFT&quot;</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>&quot;HOMICIDE&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;BURGLARY&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;ASSAULT W/DANGEROUS WEAPON&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;ARSON&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Reino Unido&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (5)' name='federated.1gfmcwi0rsu1l41fpz5jj1hik0z1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gfmcwi0rsu1l41fpz5jj1hik0z1'>
+            <column datatype='integer' name='[Crime Count]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Crimetype]' role='dimension' type='nominal' />
+            <column caption='Offense' datatype='string' name='[OFFENSE]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Shift]' role='dimension' type='nominal' />
+            <column-instance column='[Crimetype]' derivation='None' name='[none:Crimetype:nk]' pivot='key' type='nominal' />
+            <column-instance column='[OFFENSE]' derivation='None' name='[none:OFFENSE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Shift]' derivation='None' name='[none:Shift:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Crime Count]' derivation='Sum' name='[sum:Crime Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]' value='49' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]' value='-90' />
+            <format attr='text-orientation' field='[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</rows>
+        <cols>([federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk] / ([federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk] / [federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]))</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;ARSON&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>119</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;ARSON&quot;</value>
+                <value>&quot;EVENING&quot;</value>
+                <value>105</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;ARSON&quot;</value>
+                <value>&quot;DAY&quot;</value>
+                <value>99</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;BURGLARY&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>5412</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;BURGLARY&quot;</value>
+                <value>&quot;EVENING&quot;</value>
+                <value>13808</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;BURGLARY&quot;</value>
+                <value>&quot;DAY&quot;</value>
+                <value>11197</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;MOTOR VEHICLE THEFT&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>5905</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;MOTOR VEHICLE THEFT&quot;</value>
+                <value>&quot;EVENING&quot;</value>
+                <value>11123</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;MOTOR VEHICLE THEFT&quot;</value>
+                <value>&quot;DAY&quot;</value>
+                <value>14254</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;THEFT F/AUTO&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>12811</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;THEFT F/AUTO&quot;</value>
+                <value>&quot;EVENING&quot;</value>
+                <value>27333</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;THEFT F/AUTO&quot;</value>
+                <value>&quot;DAY&quot;</value>
+                <value>37314</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;THEFT/OTHER&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>14441</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;THEFT/OTHER&quot;</value>
+                <value>&quot;EVENING&quot;</value>
+                <value>59246</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Non-Violent&quot;</value>
+                <value>&quot;THEFT/OTHER&quot;</value>
+                <value>&quot;DAY&quot;</value>
+                <value>47293</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;ASSAULT W/DANGEROUS WEAPON&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>8280</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;ASSAULT W/DANGEROUS WEAPON&quot;</value>
+                <value>&quot;EVENING&quot;</value>
+                <value>9221</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;ASSAULT W/DANGEROUS WEAPON&quot;</value>
+                <value>&quot;DAY&quot;</value>
+                <value>4874</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;HOMICIDE&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>1170</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;ROBBERY&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>11934</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;ROBBERY&quot;</value>
+                <value>&quot;EVENING&quot;</value>
+                <value>14677</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;ROBBERY&quot;</value>
+                <value>&quot;DAY&quot;</value>
+                <value>7361</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;SEX ABUSE&quot;</value>
+                <value>&quot;MIDNIGHT&quot;</value>
+                <value>830</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;SEX ABUSE&quot;</value>
+                <value>&quot;EVENING&quot;</value>
+                <value>762</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Shift:nk]</field>
+                  <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[sum:Crime Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Violent&quot;</value>
+                <value>&quot;SEX ABUSE&quot;</value>
+                <value>&quot;DAY&quot;</value>
+                <value>622</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card pane-specification-id='0' param='[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:Crimetype:nk]</field>
+            <field>[federated.1gfmcwi0rsu1l41fpz5jj1hik0z1].[none:OFFENSE:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
